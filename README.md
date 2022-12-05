@@ -1,5 +1,40 @@
 # praktikum-7
 
+#### Nama : Ivan Fathurrochman Achmad
+
+#### Nim : 312210271
+
+#### Kelas : TI.22.A2
+
+#### Tugas Latihan 1
+
+## latihan 1
+
+ubahlah kode funsi di bawah ini menggunakan lambda
+
+<img width="599" alt="gambar1" src="https://user-images.githubusercontent.com/115911604/205625148-7fb0eb5d-0ad4-48e9-b0dd-6a787ad5183f.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Ivan Fathurrochman 
 data = {}
 
@@ -54,116 +89,114 @@ def tampilkan():
     
     print("____________________________________________________________________________________________")
 
-def 
+def hapus():
 
-hapus():
+     print("Hapus Data Nilai Mahasiswa")
 
-print("Hapus Data Nilai Mahasiswa")
+     nama = input(" Masukan Nama\t:")
 
-nama = input(" Masukan Nama\t:")
+     if nama in data.keys():
 
-if nama in data.keys():
+     del data[nama]
 
-del data[nama]
+     print()
 
-print()
+     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+     print("===| BERHASIL MENGHAPUS DATA |===")
 
-print("===| BERHASIL MENGHAPUS DATA |===")
+     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+     else:
 
-else:
+     print("Data {0} tidak ada".format(nama))
 
-print("Data {0} tidak ada".format(nama))
+     def ubah():
 
-def ubah():
+     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+     print("===| Edit Data Nilai Mahasiswa |===")
 
-print("===| Edit Data Nilai Mahasiswa |===")
+     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+     nama = input("Masukan Nama\t\t: ")
 
-nama = input("Masukan Nama\t\t: ")
+     print("___________________________________")
 
-print("___________________________________")
+     if nama in data.keys():
 
-if nama in data.keys():
+     nim = input("NIM baru\t\t\t: ")
 
-nim = input("NIM baru\t\t\t: ")
+     tugas = int(input("Nilai Tugas Baru\t: "))c
 
-tugas = int(input("Nilai Tugas Baru\t: "))c
+     uts = int(input("Nilai UTS Baru\t\t: "))
 
-uts = int(input("Nilai UTS Baru\t\t: "))
+     uas = int(input("Nilai UAS Baru\t\t: "))
 
-uas = int(input("Nilai UAS Baru\t\t: "))
+     nilaiakhir = (tugas * 30 / 100 + uts * 35 / 100 + uas * 35 / 100)
 
-nilaiakhir = (tugas * 30 / 100 + uts * 35 / 100 + uas * 35 / 100)
+     data[nama] = nim, tugas, uts, uas, nilaiakhir
 
-data[nama] = nim, tugas, uts, uas, nilaiakhir
+     print()
 
-print()
+     print("<><><><><><><><><><><><><><><><>")
 
-print("<><><><><><><><><><><><><><><><>")
+     print("====| BERHASIL MENGUBAH DATA |====")
 
-print("====| BERHASIL MENGUBAH DATA |====")
+     print("<><><><><><><><><><><><><><><><>")
 
-print("<><><><><><><><><><><><><><><><>")
+     else:
 
-else:
+     print("Data nilai {0} tidak ada ".format(nama))
 
-print("Data nilai {0} tidak ada ".format(nama))
+     while True:
 
-while True:
+     print("")
 
-print("")
+     print("|_<><><><><><><><><><><><><><><><><>_|")
 
-print("|_<><><><><><><><><><><><><><><><><>_|")
+     print("|~~~~~~~~| DATA MAHASISWA |~~~~~~~~~~|")
 
-print("|~~~~~~~~| DATA MAHASISWA |~~~~~~~~~~|")
+     print("|_<><><><><><><><><><><><><><><><><>_|")
 
-print("|_<><><><><><><><><><><><><><><><><>_|")
+     x = input("1.| Lihat Data \n2.| Tambah Data \n3.| Ubah Data \n4.| Hapus Data \n0.| Keluar Aplikasi \nPilih menu : ")
 
-x = input("1.| Lihat Data \n2.| Tambah Data \n3.| Ubah Data \n4.| Hapus Data \n0.| Keluar Aplikasi \nPilih menu : ")
+     if x.lower() == "1":
 
-if x.lower() == "1":
+     tampilkan()
 
-tampilkan()
+     elif x.lower() == "2":
 
-elif x.lower() == "2":
+     tambah()
 
-tambah()
+     elif x.lower() == "3":
 
-elif x.lower() == "3":
+     ubah()
 
-ubah()
+     elif x.lower() == "4":
 
-elif x.lower() == "4":
+     hapus()
 
-hapus()
+     elif x.lower() == "0":
 
-elif x.lower() == "0":
+     print()
 
-print()
+     print("<><><><><><><><><><><><><><><><>")
 
-print("<><><><><><><><><><><><><><><><>")
+     print("====== KELUAR DARI PROGRAM ======")
 
-print("====== KELUAR DARI PROGRAM ======")
+     print("<><><><><><><><><><><><><><><><>")
 
-print("<><><><><><><><><><><><><><><><>")
+     break
 
-break
+     else:
 
-else:
+     print()
 
-print()
+     print("<><><><><><><><><><><><><><><><>")
 
-print("<><><><><><><><><><><><><><><><>")
+     print("== Pilihan Anda Tidak Tersedia ==")
 
-print("== Pilihan Anda Tidak Tersedia ==")
+     print("== Pilihlah Menu Yang Tersedia ==")
 
-print("== Pilihlah Menu Yang Tersedia ==")
-
-print("<><><><><><><><><><><><><><><><>")
+     print("<><><><><><><><><><><><><><><><>")
