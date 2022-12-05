@@ -14,28 +14,15 @@ ubahlah kode funsi di bawah ini menggunakan lambda
 
 <img width="599" alt="gambar1" src="https://user-images.githubusercontent.com/115911604/205625148-7fb0eb5d-0ad4-48e9-b0dd-6a787ad5183f.png">
 
+![gambar2](https://user-images.githubusercontent.com/115911604/205625681-eab8eded-d944-4d43-8cab-58bd8362f3fb.png)
+
+
+<img width="599" alt="3" src="https://user-images.githubusercontent.com/115911604/205625826-bf649ad0-232c-4c82-8bd8-1d3dbc81c620.png">
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Ivan Fathurrochman 
 data = {}
 
 def tambah():
